@@ -308,7 +308,7 @@ hr{
 }
 
 .price{
-    font-size: 20px;
+    font-size: 2.5vh;
 }
 
 .grid button:hover{
@@ -373,7 +373,7 @@ h3{
     padding: 5vw;
     margin-top: 2vw;
     animation: shadow linear 3s infinite;
-    background-image:url('Assets/fondo2.jpg');
+    background-image:url('/Assets/fondo2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
