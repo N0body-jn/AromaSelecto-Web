@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AromaSelecto</title>
+    <link rel="icon" href="/Assets/Icons/spoon.svg" type="image/svg+xml" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="main2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+     
+</head>
+
+<body>
+    <header>
+         <a id="texto" href="#welcome">AromaSelecto</a>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#sobrenos">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="div-icon" id="cartIcon" style="transition: 0.5s; cursor: pointer;">
+            <img src="/Assets/Icons/shop.svg" alt="placeholder" width='35px' id="cartdrop">
+            <span id="cartCount">0</span>
+        </div>
+                
+       <div class="cart-dropdown " id="cart-dropdown">
+            <div class="cart-items" id="cart-items">
+                <div class="empty-cart-message">Tu carrito está vacío</div>
+            </div>
+            <hr>
+            <div id="cart-summary">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="whatsappBtn">Enviar por WhatsApp</button>
+        </div>
+    </header>
+
+
+    <section class="welcome" id="welcome">
+        <h1>Descubre el <br>mundo de sabores</h1>
+        <h2>Las mejores especias y condimentos<br> seleccionados para ti</h2>
+        <button onclick="location.href='#productos'">Ver Catálogo</button>
+    </section>
+
+
+    <main class="category" id="productos">
+        <h3>Nuestros Productos</h3>
+        <!--Nav de productos-->
+        <div id="nav-prod">
+            <a class="filter-a active" href="#all">Todos</a>
+            <a class="filter-a" href="#condimento">Condimentos</a>
+            <a>Combos</a>
+            <a class="filter-a" href="#dulce">Dulce</a>
+        </div>
+        <hr>
+        <!--Div con grillas-->
+        <div class="grid">
+            <!--Producto 1-->
+            <div class="card" data-category="condimento">
+                <img src="/Assets/Productos/Chimichurri.jpg">
+                <h4>Ají Molido</h4>
+                <p class="especial">Cantidad: 100g</p>
+                <p class="descripcion">Ají directo para tus<br> comidas picantes preferidas</p>
+                <div>
+                <p class="price">$1500</p>
+                <button class="add-to-cart" data-id="1" data-name="Aji R." data-price="1500">Ordernar</button>
+                </div>
+            </div>
+            <!--Producto 2-->
+            <div class="card" data-category="condimento">
+                <img src="/Assets/Productos/Nuez Moscada.jpg">
+                <h4>Nuez Moscada</h4>
+                <p class="especial">Cantidad: 25g</p>
+                <p class="descripcion">Usala para tus postres y bebidas <br>favoritas siempre que quieras.</p>
+               <div>
+                <p class="price">$800</p>
+                <button class="add-to-cart" data-id="2" data-name="Nuez Moscada" data-price="800">Ordernar</button>
+                </div>
+            </div>
+            <!--Producto 3-->
+            <div class="card" data-category="condimento">
+                <img src="/Assets/Productos/Pimenton.jpg">
+                <h4>Pimentón Rojo</h4>
+                <p class="especial">Cantidad: 100g</p>
+                <p class="descripcion">Pimentón rojo con <br> un delicado toque ahumado.</p>
+                <div>
+                <p class="price">$1000</p>
+                <button class="add-to-cart" data-id="3" data-name="Pimenton" data-price="1000"  data-image="/Assets/Decoracion/minipimenton.png">Ordernar</button>
+                </div>
+            </div>
+            <!--Producto 4-->
+            <div class="card" data-category="condimento">
+                <img src="/Assets/Productos/Orégano.jpg">
+                <h4>Orégano</h4>
+                <p class="especial">Cantidad: 100g</p>
+                <p class="descripcion">Orégano fresco y con aroma para <br> brindarle a tus comidas gran sabor.</p>
+                <div>
+                <p class="price">$1000</p>
+                <button class="add-to-cart" data-id="4" data-name="Oregano" data-price="1000"  data-image="/Assets/Decoracion/Minioregano.png">Ordernar</button>
+                </div>
+            </div>
+            <!--Producto 5-->
+            <div class="card" data-category="dulce">
+                <img src="/Assets/Productos/Frutos secos.jpg">
+                <h4>Frutos Secos</h4>
+                <p class="especial">Cantidad: 100g</p>
+                <p class="descripcion">¡Mix de Frutos Secos! Un snack sano con<br> trozitos de banana, pasas, maní y más.</p>
+                <div>
+                <p class="price">$1700</p>
+                <button class="add-to-cart" data-id="5" data-name="Frutos S." data-price="1700" data-image="/Assets/Decoracion/minifs.WEBP">Ordernar</button>
+                </div>
+            </div>
+            <!--Producto 6-->
+            <div class="card" data-category="dulce">
+                <img src="/Assets/Productos/Granola.jpg">
+                <h4>Granola</h4>
+                <p class="especial">Cantidad: 100g</p>
+                <p class="descripcion">Granola con pasas sin azucares <br>incluidos para tus postres favoritos</p>
+                <div>
+                <p class="price">$1700</p>
+                <button class="add-to-cart" data-id="6" data-name="Granola" data-price="1700">Ordernar</button>
+                </div>
+            </div>
+            <!--Producto 7-->
+            <div class="card" data-category="condimento">
+                <img src="/Assets/Productos/Ajo.png">
+                <h4>Ajo en polvo</h4>
+                <p class="especial">Cantidad: 100g</p>
+                <p class="descripcion">Ajo en polvo molido ¡listo para sazonar<br>y dar sabor a tus comidas!</p>
+                <div>
+                <p class="price">$1400</p>
+                <button class="add-to-cart" data-id="7" data-name="Ajo en P." data-price="1400" data-image="/Assets/Decoracion/miniajo.WEBP">Ordernar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <h3>¡Conoce dónde estuvimos!</h3>
+        <div class="Places">
+            <div class="slider">
+                <div>
+                <img src="/Assets/Lugares/Tree Bar logo.jpg" alt="placeholder" width="100px"> 
+                <p>Tree Bar</p>
+                </div>
+                <div>
+                <img src="/Assets/Lugares/Ecoferia.png" alt="placeholder" width="160px"> 
+                <p>Ecoferia - Ciudad SMT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="Why-us" id="sobrenos">
+        <h3 style="color: white;">¿Por qué elegirnos?</h3>
+        <section class="carrousel">
+            <div class="general" id="1">
+                <img src="/Assets/Icons/plant.svg" alt="placeholder">
+                <div>
+                <h4>100% Natural</h4>
+                <p>Nuestros productos son totalmente naturales y cuidadosamente seleccionados. Proveemos siempre la mejor calidad a nuestros clientes.</p>
+                </div>
+            </div>
+            <div class="general" id="2">
+                <img src="/Assets/Icons/fast.svg" alt="placeholder">
+                <div>
+                <h4>Envíos a Domicilio</h4>
+                <p>Hacemos envios a domicilio a cargo del cliente con un 10% de descuento en su compra total</p>
+                </div>
+            </div>
+            <div class="general" id="3">
+                <img src="/Assets/Icons/complain.svg" alt="placeholder">
+                <div>
+                <h4>Recomendaciones en cuenta</h4>
+                <p>Todas las quejas y recomendaciones de nuestros productos son tomadas en cuenta para próximas producciones!
+                Recomiendanos más productos para poder mejorar.
+                </p>
+                </div>
+            </div>
+            </section>
+    </section>
+
+    <!--FINAL-->
+    <footer id="contactenos">
+        <div  class="div-grid">
+            <div>
+                <h4>AromaSelecto</h4>
+                <p>¡La pizca que le faltaba a tus comidas!</p>
+                <p>Productos seleccionados solo para tí</p>
+            </div>
+
+            <div id="contacto">
+                <h4>Contacto</h4>
+                <a href="mailto:aromsaelecto2025@gmail.com"><img src="/Assets/Footer/Mail.svg" alt="mail" class="imga" width="300px"></a>
+                <a href="https://www.instagram.com/aromaselectojt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="/Assets/Footer/ig.svg" alt="ig" class="imga"></a><br>
+                <a href="https://wa.link/xx7c3n"><img src="/Assets/Footer/num1.svg" alt="numero" class="imga"></a>
+                <a href="https://wa.link/1z70yb"><img src="/Assets/Footer/num2.svg" alt="numero2" class="imga"></a>
+                <a href="https://wa.link/ousu7a"><img src="/Assets/Footer/num3.svg" alt="numero3" class="imga"></a>
+            </div>
+
+            <div>
+                <h4>Enlaces</h4>
+                
+                <li><a href="#welcome">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#sobrenos">Sobre Nosotros<a></a></li>
+                <li><a href="#contactenos">Contacto</a></li>
+            </div>
+
+            <div>
+                <h4>Horario</h4>
+                <p>Lunes - Sabado: 10:00 a 19:00</p>
+                <p>Domingo: 14:00 a 19:00</p>
+            </div>
+        </div>
+        <hr>
+        <p id="bless">Que tenga buen día, Dios lo bendiga.<br>«Copyright © 2025 - AromaSelecto - Todos los Derechos reservados»</p>
+    </footer>
+</body>
+</html>
