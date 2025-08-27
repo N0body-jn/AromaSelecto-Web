@@ -28,10 +28,49 @@ a{
 ul{
     list-style: none;
     display: inline-flex;
-    gap: 2vw;
+    gap: 2vh;
     padding-left: 0;
     font-family: 'Raleway';
 }
+
+.menu-toggle{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: flex;
+        background: none;
+        border: none;
+        font-size: 2em;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #6e5930;
+        position: absolute;
+        top: 60px;
+        right: 5vw;
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    nav ul.active {
+        display: flex;
+        position: absolute;
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
 nav a{
     transition: 0.3s;
 }
@@ -50,7 +89,6 @@ nav a:hover{
     margin-top: 10px;
     font-size: 1.2em;
 }
-
 
 .div-icon:hover{
     transition: 0.5s;
@@ -210,12 +248,12 @@ nav a:hover{
 /*Apartado Nuestros Productos*/
 
 #nav-prod{
-    margin: 3.5vw;
+    margin: 3.5vh;
     text-align: center;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-
 }
+
 
 #nav-prod a{
     margin-left: 5px;
@@ -254,7 +292,7 @@ hr{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     text-align: center;
-    gap: 1.5rem;
+    gap: 2vh;
     margin-left: 5vh;
     margin-right: 5vh;
     place-items: center;
@@ -285,7 +323,7 @@ hr{
 .card div{
     display: grid;
     grid-template-columns: auto auto;
-    gap: 100px;
+    gap: 1.5vh;
     margin-top: 2vw;
 }
 
@@ -411,6 +449,7 @@ h3{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
+    justify-items: center;
     gap: 5vh;
 }
 
