@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const cartSummary = document.getElementById('cart-summary');
             const emptyCartMessage = document.querySelector('.empty-cart-message');
             const whatsappBtn = document.getElementById('whatsappBtn');
+            const menuToggle = document.getElementById('menu-toggle');
+            const navUl = document.querySelector('nav ul');
             
             let cart = [];
             //Abrir carrito
@@ -234,4 +236,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             `;
             document.head.appendChild(style);
+            // Funcion desplegable del menu
+            menuToggle.addEventListener('click', function() {
+                navUl.classList.toggle('active');
+            }); 
         });
